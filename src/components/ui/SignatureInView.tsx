@@ -16,9 +16,9 @@ export function SignatureInView() {
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 transition-colors duration-150 hover:text-accent-soft"
       >
-        <Signature isInView={inView} data={firstSignature} />
-        <span>&amp;</span>
         <Signature isInView={inView} data={secondSignature} />
+        <span>&amp;</span>
+        <Signature isInView={inView} data={firstSignature} />
       </a>
     </div>
   );
