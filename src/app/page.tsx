@@ -186,11 +186,16 @@ export default async function HomePage() {
 
       {/* Footer */}
       <footer className="mt-8 border-t">
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-8 sm:px-6 lg:px-8">
-          <p className="text-center text-xs text-zinc-500">
-            Data sourced from RaceFacer • Updated to 29th March 2026
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-4 px-4 py-8 sm:grid-cols-3 sm:px-6 lg:px-8">
+          <p className="text-center text-xs text-zinc-500 sm:text-left">
+            Data sourced from RaceFacer
           </p>
-          <SignatureInView />
+          <div className="flex justify-center">
+            <SignatureInView />
+          </div>
+          <p className="text-center text-xs text-zinc-500 sm:text-right">
+            Updated to 29th March 2026
+          </p>
         </div>
       </footer>
     </div>
